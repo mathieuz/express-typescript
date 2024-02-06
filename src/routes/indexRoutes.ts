@@ -6,7 +6,7 @@ import { IndexController } from "../controllers/IndexController"
 
 //Instanciando router e controller associado ao grupo de rotas
 const indexRouter : Router = Router()
-const controller = new IndexController
+const controller : IndexController = new IndexController
 
 //Rotas/endpoints
 indexRouter.get("/", controller.getIndexPage)
